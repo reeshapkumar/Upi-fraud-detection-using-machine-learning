@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Fraud Detection Intro</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevent scrolling */
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../templates/index.png'); /* Replace with your image URL */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            opacity: 0; /* Start invisible */
+            transition: opacity 0.5s ease; /* Fade-in and fade-out transition */
+        }
+        h1 {
+            color: white; /* Text color */
+            font-size: 3em; /* Font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Set the redirect URL
+        const redirectUrl = 'index2.html'; // Replace with your next page URL
+
+        // Fade in effect when the page loads
+        window.onload = function() {
+            document.body.style.opacity = 1; // Fade in the body
+            setTimeout(() => {
+                // Fade out effect before redirecting
+                document.body.style.opacity = 0; // Start fade out
+                setTimeout(() => {
+                    window.location.href = redirectUrl; // Redirect after fade out
+                }, 1000); // Wait for the fade-out transition to complete
+            }, 500); // Display for 3 seconds before fading out
+        };
+    </script>
+</body>
+</html>

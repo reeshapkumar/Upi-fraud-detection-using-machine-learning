@@ -1,0 +1,335 @@
+<html>
+<head>
+    <title>UPI Fraud Detection Main-Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        @keyframes shift {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100px * 18)); /* Adjust based on number of images and size */
+            }
+        }
+
+        .scrolling-images {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        .scrolling-wrapper {
+            display: flex;
+            animation: shift 35s steps(15) infinite; /* 18 steps for 18 images */
+        }
+
+        /* Optimized image scrolling for desktop */
+.scrolling-images img {
+    height: 100px; /* Adjust as needed */
+    width: auto; /* This ensures the width scales based on the image aspect ratio */
+    max-width: 100px; /* Ensures images don't get too large */
+    margin-right: 2px;
+    object-fit: contain;
+}
+
+/* Additional media query for larger desktop screens */
+@media only screen and (min-width: 1200px) {
+    .scrolling-images img {
+        height: 120px; /* Increase size for larger screens */
+        max-width: 120px;
+    }
+}
+
+/* Additional media query for smaller devices (like tablets) */
+@media only screen and (max-width: 768px) {
+    .scrolling-images img {
+        height: 80px; /* Reduce image size for smaller screens */
+        max-width: 80px;
+    }
+}
+
+
+        body {
+    background-image: url('../templates/index3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background fixed even if the page scrolls */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+    </style>
+</head>
+<body class="bg-black text-white">
+    <header class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-3xl font-bold">
+            <span class="text-red-800">UPI</span> Fraud Detection Using ML
+        </div>
+        <nav class="space-x-4">
+            <a class="hover:underline" href="index4.html">Platform</a>
+            <a class="hover:underline" href="index4.html">Amount</a>
+            <a class="hover:underline" href="index4.html">New Bal</a>
+            <a class="hover:underline" href="index4.html">Old Bal</a>
+            <a class="hover:underline" href="index4.html">DOB</a>
+            <a class="hover:underline" href="index4.html">DOT</a>
+            <a class="hover:underline" href="index4.html">TOT</a>
+            <a class="hover:underline" href="index4.html">PIN</a>
+        </nav>
+    </header>
+
+    <section class="text-white p-4 overflow-hidden">
+        <div class="scrolling-images">
+            <div class="scrolling-wrapper">
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/s.png" /></a>
+                <a href="index4.html"><img alt="GPay" src="../templates/a.png" /></a>
+                <a href="index4.html"><img alt="Paytm" src="../templates/b.png" /></a>
+                <a href="index4.html"><img alt="Phonepe" src="../templates/c.png" /></a>
+                <a href="index4.html"><img alt="BHIM" src="../templates/d.png" /></a>
+                <a href="index4.html"><img alt="AmazonPay" src="../templates/e.png" /></a>
+                <a href="index4.html"><img alt="MobiKwik" src="../templates/f.png" /></a>
+                <a href="index4.html"><img alt="WhatsappPay" src="../templates/g.png" /></a>
+                <a href="index4.html"><img alt="BharatPay" src="../templates/h.png" /></a>
+                <a href="index4.html"><img alt="JioPay" src="../templates/i.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/j.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/k.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/l.png" /></a>
+                <a href="index4.html"><img alt="PayZapp" src="../templates/m.png" /></a>
+                <a href="index4.html"><img alt="IPay" src="../templates/n.png" /></a>
+                <a href="index4.html"><img alt="YonoSBI" src="../templates/o.png" /></a>
+                <a href="index4.html"><img alt="AxisPay" src="../templates/p.png" /></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-white p-4 flex flex-wrap space-x-10 space-y-4">
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">GooglePay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">PhonePe</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">BHIM</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">Paytm</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">AmazonPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">MobiKwik</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">WhatsappPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">BharatPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">JioPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">IPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">YonoSBI</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">AxisPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">PayZapp</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">Kotak811</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">FreeCharge</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">ICICI</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">Cred</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">YonoSBI</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">AxisPay</button></a>
+        <a href="index4.html"><button class="bg-gray-600 text-white px-4 py-2 rounded">PayZapp</button></a>
+    </section>
+</body>
+</html>
